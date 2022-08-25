@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:  hsl(204, 43%, 93%);
+}
+
+.container{
+    max-width: 960px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper{
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'a a''b c';
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 2rem 1rem;
+}
+
+.box-join{
+    grid-area: a;
+    padding: 40px;
+}
+
+.box-sub{
+    grid-area: b;
+    background-color:  hsl(179, 62%, 43%);
+    padding: 40px;
+}
+
+.box-why{
+    grid-area: c;
+    background-color:  hsl(179, 44%, 56%);
+    padding: 40px;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+h3{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 12px;
+}
+
+.box-join p{
+    color:  hsl(218, 22%, 67%);
+    line-height: 1.4;
+}
+
+
+h2{
+    color:#fff;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+h5{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+h5 span.price{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+h5 span{
+    color: hsl(196, 49%, 92%);
+    font-weight: 400;
+}
+
+.box-sub p{
+    color: #fff;
+}
+
+.box-sub button{
+    width: 100%;
+    border: none;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 12px 0;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.box-sub button:hover{
+    cursor: pointer;
+    background-color: #a9c42d;
+    transform: scale(1.02);
+}
+
+.box-why ul {
+    list-style: none;
+}
+
+.box-why li{
+    color:  hsl(204, 43%, 93%);
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 425px){
+
+    .container{
+        margin: 10px;
+    }
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-areas: 'a''b''c';
+    }
+    .box-join{
+        padding: 30px;
+    }
+
+}
